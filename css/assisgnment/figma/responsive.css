@@ -1,0 +1,94 @@
+@media (max-width: 575.98px) {
+  nav,
+  .buttons {
+    display: none;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .col-40,
+  .col-50,
+  .col-60,
+  .col-30 {
+    width: 100%;
+  }
+  .start {
+    align-items: start;
+  }
+  .text-wrapper .title {
+    font-size: 47px;
+    line-height: 60px;
+  }
+  .input-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .trusted-teams-wrapper {
+    flex-direction: row;
+  }
+  .timeline-wrapper {
+    row-gap: 50px;
+  }
+  .single-text-item {
+    text-align: center;
+  }
+  .make-your-work-single-item {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .how-we-work-wrapper {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+    row-gap: 80px;
+  }
+  #how-we-work .text-wrapper {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .customer-profile-wrapper {
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #employee-box {
+    background: #794cff;
+  }
+  .employee {
+    background: transparent;
+    border-radius: 0;
+  }
+  .employee-text-wrapper {
+    gap: 50px;
+  }
+  .employee-text-wrapper p {
+    font-size: 26px;
+    text-align: center;
+  }
+  .links-conteiner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    row-gap: 50px;
+  }
+  .single-links-wrapper {
+    width: 48%;
+  }
+  .single-links-wrapper:last-of-type {
+    width: 100%;
+  }
+  .single-links-wrapper img {
+  }
+  .footer-bottom {
+    align-items: start;
+  }
+  .socials {
+    flex-direction: row;
+  }
+  .footer-bottom p {
+    text-align: left;
+  }
+}

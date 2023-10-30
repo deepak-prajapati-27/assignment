@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Open+Sans:wght@400;500&family=Roboto+Slab&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: #f0ebfa;
+}
+img {
+  width: 100%;
+}
+button {
+  border: none;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 50px 50px;
+}
+.row {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.text-align-center {
+  text-align: center;
+}
+.align-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.col-30 {
+  width: 30%;
+}
+.col-40 {
+  width: 40%;
+}
+.col-50 {
+  width: 50%;
+}
+.col-60 {
+  width: 60%;
+}
+.pd-30 {
+  padding: 30px;
+}
+.pd-50 {
+  padding: 50px;
+}
+.pd-100 {
+  padding: 100px;
+}
+.mt {
+  margin-top: 100px;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.sec-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  color: #35414b;
+}
+.navbar {
+  gap: 50px;
+}
+.navbar a {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #35414b;
+}
+.get-started {
+  background: #d5c9fd;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #794cff;
+
+  padding: 15px 20px;
+}
+
+.text-wrapper .title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 72px;
+  color: #35414b;
+}
+
+.text-wrapper p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4e5a65;
+}
+.text-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.input-box {
+  display: flex;
+}
+.input-box input {
+  background: #ffffff;
+  border: 1px solid #e1e5ea;
+  border-radius: 4px 0px 0px 4px;
+  padding: 20px 30px;
+}
+.try-it {
+  background: #794cff;
+  border: 1px solid #794cff;
+  border-radius: 0px 4px 4px 0px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 15px 20px;
+}
+#trusted p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #4e5a65;
+  margin-bottom: 30px;
+}
+#trusted span {
+  font-weight: 500;
+  color: #35414b;
+}
+.single-text-item h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: #35414b;
+  margin-bottom: 10px;
+}
+.single-text-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #4e5a65;
+}
+.single-text-item {
+  padding: 20px 0;
+}
+
+.make-your-work-single-item h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: #35414b;
+}
+.make-your-work-single-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #4e5a65;
+}
+.icon-box {
+  height: 64px;
+  width: 64px;
+}
+.make-your-work-single-item {
+  gap: 20px;
+}
+.section-wrapper {
+  row-gap: 80px;
+  margin-top: 50px;
+}
+#how-we-work .text-wrapper {
+  align-items: start;
+  gap: 30px;
+}
+.customer-profile-wrapper {
+  justify-content: space-around;
+}
+.single-profile {
+  gap: 20px;
+}
+
+.employee-text-wrapper p {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #ffffff;
+}
+.buttons-box {
+  gap: 20px;
+}
+.buttons-box button {
+  border-radius: 10px;
+}
+.employee {
+  background: #796eff;
+  border-radius: 16px;
+}
+footer {
+  background-color: #1d2830;
+}
+.single-links-wrapper ul li {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 16px;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #ffffff;
+  padding: 10px;
+}
+.single-links-wrapper ul li:first-of-type {
+  font-weight: 600;
+  font-size: 16px;
+  font-feature-settings: "salt" on, "liga" off;
+}
+.footer-bottom p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+
+  font-feature-settings: "salt" on, "liga" off;
+
+  color: #d9dbe1;
+}
+.app-icon img {
+  height: 32px;
+  width: 32px;
+}
+.socials {
+  gap: 20px;
+}
+.footer-bottom {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #ffff;
+}
