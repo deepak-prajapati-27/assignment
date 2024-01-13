@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <style>
+      h1 {
+        font-size: 50px;
+        text-align: center;
+      }
+      label {
+        display: inline-block;
+        width: 200px;
+      }
+      li {
+        margin-bottom: 20px;
+        font-size: 30px;
+      }
+      input {
+        height: 50px;
+        width: 400px;
+        font-size: 30px;
+      }
+      button {
+        text-align: center;
+        width: 200px;
+        height: 50px;
+        margin-left: 16.5%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ENTER MARKS</h1>
+    <ol>
+      <li class="marks">
+        <label for="">C Language</label>
+        <input type="text" name="" id="c_lang" onblur="handle(this,'error1')" />
+        <span id="error1"></span>
+      </li>
+      <li class="marks">
+        <label for="">C++ Language</label>
+        <input
+          type="text"
+          name=""
+          id="c++_lang"
+          onblur="handle(this,'error2')"
+        />
+        <span id="error2"></span>
+      </li>
+      <li class="marks">
+        <label for="">Database</label>
+        <input
+          type="text"
+          name=""
+          id="Database"
+          onblur="handle(this,'error3')"
+        />
+        <span id="error3"></span>
+      </li>
+      <li class="marks">
+        <label for="">HTML</label>
+        <input type="text" name="" id="HTML" onblur="handle(this,'error4')" />
+        <span id="error4"></span>
+      </li>
+      <li class="marks">
+        <label for="">CSS</label>
+        <input type="text" name="" id="CSS" onblur="handle(this,'error5')" />
+        <span id="error5"></span>
+      </li>
+      <li class="marks">
+        <label for="">php</label>
+        <input type="text" name="" id="php" onblur="handle(this,'error6')" />
+        <span id="error6"></span>
+      </li>
+      <li class="marks">
+        <label for="">Core java</label>
+        <input
+          type="text"
+          name=""
+          id="core_java"
+          onblur="handle(this,'error7')"
+        />
+        <span id="error7"></span>
+      </li>
+    </ol>
+    <button onclick="add()">Result</button>
+
+    <p>total is : <span id="final"></span>/350</p>
+  </body>
+  <script>
+    function add() {
+      let a = parseInt(document.getElementById("c_lang").value);
+      if (a > 50) {
+        alert("enter a number below");
+      }
+      let b = parseInt(document.getElementById("c++_lang").value);
+      let c = parseInt(document.getElementById("Database").value);
+      let d = parseInt(document.getElementById("HTML").value);
+      let e = parseInt(document.getElementById("CSS").value);
+      let f = parseInt(document.getElementById("php").value);
+      let g = parseInt(document.getElementById("core_java").value);
+
+      let total = a + b + c + d + e + f + g;
+
+      document.getElementById("final").innerText = total;
+    }
+    function handle(input, error) {
+      if (input.value > 50) {
+        document.getElementById(error).innerText = "Enter valid marks ";
+        document.getElementById(error).style.fontSize = "15px";
+        document.getElementById(error).style.color = "red";
+      } else {
+        document.getElementById(error).innerText = "";
+      }
+    }
+  </script>
+</html>
