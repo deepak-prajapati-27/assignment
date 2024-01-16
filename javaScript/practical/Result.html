@@ -28,6 +28,10 @@
         height: 50px;
         margin-left: 16.5%;
       }
+      .final_result {
+        display: flex;
+        gap: 30%;
+      }
     </style>
   </head>
   <body>
@@ -86,14 +90,14 @@
     </ol>
     <button onclick="add()">Result</button>
 
-    <p>total is : <span id="final"></span>/350</p>
+    <div class="final_result">
+      <p>Total is : <span id="final"></span>/350</p>
+      <p>Your percentage is: <span id="percentage"></span></p>
+    </div>
   </body>
   <script>
     function add() {
       let a = parseInt(document.getElementById("c_lang").value);
-      if (a > 50) {
-        alert("enter a number below");
-      }
       let b = parseInt(document.getElementById("c++_lang").value);
       let c = parseInt(document.getElementById("Database").value);
       let d = parseInt(document.getElementById("HTML").value);
@@ -104,6 +108,9 @@
       let total = a + b + c + d + e + f + g;
 
       document.getElementById("final").innerText = total;
+
+      let pr = (100 * total) / 350;
+      document.getElementById("percentage").innerText = pr + " %";
     }
     function handle(input, error) {
       if (input.value > 50) {
