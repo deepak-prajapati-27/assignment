@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubbling Tickling</title>
+  </head>
+  <style>
+    * {
+      padding: 20px;
+    }
+    .span {
+      width: 200px;
+      border: 1px solid black;
+    }
+    .great-grand-father {
+      width: 500px;
+    }
+  </style>
+  <body class="great-great-grandfather">
+    great-great-grandparent
+
+    <div class="great-grand-father">
+      great-grand-father
+      <div class="grand-father">
+        grand-father
+        <div class="father">
+          father
+          <div class="span">span</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery link  -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery css  -->
+    <script>
+      $(document).ready(function () {
+        $(".span").parents().css({
+          border: "5px solid red",
+        });
+      });
+    </script>
+  </body>
+</html>
