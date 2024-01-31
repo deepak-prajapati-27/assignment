@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Changer Two Button</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5% auto;
+        gap: 30px;
+        width: 50%;
+      }
+      img {
+        width: 100%;
+      }
+      button {
+        width: 200px;
+        height: 50px;
+        border-radius: 30px;
+        background-color: black;
+        color: wheat;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>IMAGE CHANGER</h1>
+      <img
+        src="https://c4.wallpaperflare.com/wallpaper/527/757/70/aesthetic-neon-wallpaper-preview.jpg"
+        alt=""
+        id="img"
+      />
+      <div>
+        <button onclick="previous()">Previous</button>
+        <button onclick="next()">Next</button>
+      </div>
+    </div>
+    <script>
+      function previous() {
+        if (
+          document.getElementById("img").src ==
+          "https://c4.wallpaperflare.com/wallpaper/527/757/70/aesthetic-neon-wallpaper-preview.jpg"
+        ) {
+          document.getElementById("img").src =
+            "https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3Y5ODNiYXRjaDItMTYteC5qcGc.jpg";
+        } else {
+          document.getElementById("img").src =
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfcQpk9oA2lwUxbV9HzmGllf5N2PEkXe5WVg&usqp=CAU";
+        }
+      }
+      function next() {
+        if (
+          document.getElementById("img").src !==
+          "https://c4.wallpaperflare.com/wallpaper/527/757/70/aesthetic-neon-wallpaper-preview.jpg"
+        ) {
+          document.getElementById("img").src =
+            "https://marketplace.canva.com/EAFM8U2unZE/1/0/1600w/canva-blue-white-motivational-modern-aesthetic-sea-desktop-wallpaper-mqjBsWYwCzI.jpg";
+        } else {
+          document.getElementById("img").src =
+            "https://t3.ftcdn.net/jpg/05/57/04/88/360_F_557048825_lJT3fmexnXNycizw2bD5sDf86eJnc0le.jpg";
+        }
+      }
+    </script>
+  </body>
+</html>
